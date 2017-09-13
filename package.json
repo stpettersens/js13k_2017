@@ -1,0 +1,52 @@
+{
+  "name": "stpettersens_js13k_2017",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Blackjack implemented in under 13kb.",
+  "main": "blackjack.js",
+  "scripts": {
+    "start": "caddy",
+    "dist": "gulp",
+    "deploy": "cross-env NODE_ENV=production gulp deploy",
+    "archive": "cross-env NODE_ENV=production gulp archive",
+    "check": "gulp check-13k",
+    "doc": "gulp doc",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/stpettersens/js13k_2017.git"
+  },
+  "keywords": [
+    "blackjack",
+    "21",
+    "js13k",
+    "13k",
+    "13kb"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stpettersens/js13k_2017/issues"
+  },
+  "homepage": "https://github.com/stpettersens/js13k_2017/#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "chalk": "^2.1.0",
+    "cross-env": "^5.0.5",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-dos2unix-js": "^1.0.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-rimraf": "^0.2.1",
+    "gulp-sequence": "^0.4.6",
+    "gulp-ssp-preprocessor": "^1.0.2",
+    "gulp-standard": "^10.0.0",
+    "shelljs": "^0.7.8"
+  }
+}

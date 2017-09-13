@@ -1,0 +1,9 @@
+docs/
+js/.dummy
+js/*.min.js
+node_modules/
+.dockerignore
+.gitignore
+LICENSE
+README.md
+*.zip
